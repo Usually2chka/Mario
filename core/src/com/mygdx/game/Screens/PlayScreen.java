@@ -45,24 +45,26 @@ public class PlayScreen implements Screen {
     public PlayScreen(MarioBros game){
         this.game = game;
         gameCam = new OrthographicCamera();
-        gamePort = new FitViewport(MarioBros.V_WIDTH / MarioBros.PPM, MarioBros.V_HEIGHT / MarioBros.PPM, gameCam);
+        gamePort = new FitViewport(MarioBros.V_WIDTH, MarioBros.V_HEIGHT, gameCam);
         hud = new Hud(game.batch);
 
         mapLoader = new TmxMapLoader();
 
         map = mapLoader.load("level1.tmx");
-        renderer = new OrthogonalTiledMapRenderer(map, 1 / MarioBros.PPM);
+        renderer = new OrthogonalTiledMapRenderer(map);
         gameCam.position.set(gamePort.getWorldWidth() / 2, gamePort.getWorldHeight() / 2, 0);
+//        gameCam.position.set(gamePort.getScreenWidth() / 2, gamePort.getScreenHeight()/ 2, 0);
 
         world = new World(new Vector2(0, -10), true);
         b2dr = new Box2DDebugRenderer();
         player = new Mario(this);
+
         BodyDef bdef = new BodyDef();
         PolygonShape shape = new PolygonShape();
         FixtureDef fdef = new FixtureDef();
         Body body;
 
-        //create ground bodies/fixtures
+//        create ground bodies/fixtures
         for(MapObject object : map.getLayers().get(2).getObjects().getByType(RectangleMapObject.class)) {
             com.badlogic.gdx.math.Rectangle rect = ((RectangleMapObject) object).getRectangle();
 
@@ -122,9 +124,14 @@ public class PlayScreen implements Screen {
         if(Gdx.input.isKeyJustPressed(Input.Keys.UP))
             player.b2body.applyLinearImpulse(new Vector2(0, 4f), player.b2body.getWorldCenter(), true);
         if(Gdx.input.isKeyPressed(Input.Keys.RIGHT) && player.b2body.getLinearVelocity().x <= 2)
-            player.b2body.applyLinearImpulse(new Vector2(0.1f, 0), player.b2body.getWorldCenter(), true);
+            player.b2body.applyLinearImpulse(new Vector2(120.1f, 0), player.b2body.getWorldCenter(), true);
         if(Gdx.input.isKeyPressed(Input.Keys.LEFT) && player.b2body.getLinearVelocity().x >= -2)
-            player.b2body.applyLinearImpulse(new Vector2(-0.1f, 0), player.b2body.getWorldCenter(), true);
+            player.b2body.applyLinearImpulse(new Vector2(-120.1f, 0), player.b2body.getWorldCenter(), true);
+
+        //управление с помощью нажатия
+        //        if(Gdx.input.isTouched()) {
+//            gameCam.position.x += 100 * dt;
+//        }
     }
 
     public void  update(float dt) {
@@ -143,7 +150,9 @@ public class PlayScreen implements Screen {
         Gdx.gl.glClearColor(0.427f, 0.643f, 1f, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 
+        //drawing map
         renderer.render();
+        //drawing lines
         b2dr.render(world, gameCam.combined);
         game.batch.setProjectionMatrix(hud.stage.getCamera().combined);
         hud.stage.draw();
