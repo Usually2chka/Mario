@@ -56,6 +56,7 @@ public class PlayScreen implements Screen {
 
         world = new World(new Vector2(0, -10), true);
         b2dr = new Box2DDebugRenderer();
+        player = new Mario(this);
         BodyDef bdef = new BodyDef();
         PolygonShape shape = new PolygonShape();
         FixtureDef fdef = new FixtureDef();
@@ -172,5 +173,8 @@ public class PlayScreen implements Screen {
     @Override
     public void dispose() {
 
+    }
+    public World getWorld(){
+        return world;
     }
 }

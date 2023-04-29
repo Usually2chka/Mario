@@ -7,13 +7,14 @@ import com.badlogic.gdx.physics.box2d.CircleShape;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
 import com.badlogic.gdx.physics.box2d.World;
 import com.mygdx.game.MarioBros;
+import com.mygdx.game.Screens.PlayScreen;
 
 public class Mario extends Sprite {
     public World world;
     public Body b2body;
 
-    public Mario(World world) {
-        this.world = world;
+    public Mario(PlayScreen screen) {
+        this.world = screen.getWorld();
         defineMario();
     }
 
