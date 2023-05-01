@@ -22,7 +22,7 @@ public class WorldContactListener implements ContactListener {
 
     }
     @Override
-    public void postSolve(Contact contact, ContactImpulse impulse){
+    public void postSolve(Contact contact, ContactImpulse impulse){ ///
 
     }
 }

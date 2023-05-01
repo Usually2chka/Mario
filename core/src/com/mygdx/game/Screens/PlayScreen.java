@@ -25,6 +25,7 @@ import com.mygdx.game.MarioBros;
 import com.mygdx.game.Scenes.Hud;
 import com.mygdx.game.Sprites.Mario;
 import com.mygdx.game.Tools.B2WorldCreator;
+import com.mygdx.game.Tools.WorldContactListener;
 
 import java.awt.Rectangle;
 
@@ -70,7 +71,7 @@ public class PlayScreen implements Screen {
 
 
         player = new Mario(this);
-        world.setContactListener(new WorldConractListener());
+        world.setContactListener(new WorldContactListener());
     }
 
     public TextureAtlas getAtlas(){
