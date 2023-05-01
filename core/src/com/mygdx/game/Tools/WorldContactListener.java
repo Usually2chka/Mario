@@ -1,12 +1,14 @@
 package com.mygdx.game.Tools;
 
 import com.badlogic.gdx.physics.box2d.Contact;
+import com.badlogic.gdx.physics.box2d.ContactImpulse;
+import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Manifold;
 
 import java.awt.event.ContainerEvent;
 import java.awt.event.ContainerListener;
 
-public class WorldContactListener implements ContainerListener {
+public class WorldContactListener implements ContactListener {
     @Override
     public void beginContact(Contact contact){
 
@@ -20,7 +22,7 @@ public class WorldContactListener implements ContainerListener {
 
     }
     @Override
-    public void preSolve(Contact contact, Contactimpulse impulse){
+    public void postSolve(Contact contact, ContactImpulse impulse){
 
     }
 }
