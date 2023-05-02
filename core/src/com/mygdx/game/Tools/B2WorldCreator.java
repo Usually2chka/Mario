@@ -18,6 +18,7 @@ public class B2WorldCreator {
         BodyDef bdef = new BodyDef();
         PolygonShape shape = new PolygonShape();
         FixtureDef fdef = new FixtureDef();
+        //Rectangle rect = new Rectangle();
         Body body;
 
 
