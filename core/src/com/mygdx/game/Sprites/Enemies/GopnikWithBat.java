@@ -12,13 +12,12 @@ import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Mario;
 
-
-public class Turtle extends Enemy {
+public class GopnikWithBat extends Enemy{
     public static final int KICK_LEFT = -2;
     public static final int KICK_RIGHT = 2;
-    public enum State {WALKING, MOVING_SHELL, STANDING_SHELL}
-    public State currentState;
-    public State previousState;
+    public enum State {WALKING, MOVING_SHELL, STANDING_SHELL, GETTING_HIT, GIVING_DMG, DEAD}
+    public GopnikWithBat.State currentState;
+    public GopnikWithBat.State previousState;
     private float stateTime;
     private Animation walkAnimation;
     private Array<TextureRegion> frames;
@@ -27,14 +26,15 @@ public class Turtle extends Enemy {
     private boolean destroyed;
 
 
-    public Turtle(PlayScreen screen, float x, float y) {
+
+    public GopnikWithBat(PlayScreen screen, float x, float y) {
         super(screen, x, y);
         frames = new Array<TextureRegion>();
-        frames.add(new TextureRegion(screen.getAtlas().findRegion("turtle"), 0, 0, 16, 24));
-        frames.add(new TextureRegion(screen.getAtlas().findRegion("turtle"), 16, 0, 16, 24));
-        shell = new TextureRegion(screen.getAtlas().findRegion("turtle"), 64, 0, 16, 24);
+        frames.add(new TextureRegion(screen.getAtlas().findRegion("GopnikWithBat"), 0, 0, 16, 24));
+        frames.add(new TextureRegion(screen.getAtlas().findRegion("GopnikWithBat"), 16, 0, 16, 24));
+        shell = new TextureRegion(screen.getAtlas().findRegion("GopnikWithBat"), 64, 0, 16, 24);
         walkAnimation = new Animation(0.2f, frames);
-        currentState = previousState = State.WALKING;
+        currentState = previousState = GopnikWithBat.State.WALKING;
 
         setBounds(getX(), getY(), 16 / MarioBros.PPM, 24 / MarioBros.PPM);
 
@@ -106,8 +106,8 @@ public class Turtle extends Enemy {
     @Override
     public void update(float dt) {
         setRegion(getFrame(dt));
-        if(currentState == State.STANDING_SHELL && stateTime > 5){
-            currentState = State.WALKING;
+        if(currentState == GopnikWithBat.State.STANDING_SHELL && stateTime > 5){
+            currentState = GopnikWithBat.State.WALKING;
             velocity.x = 1;
             System.out.println("WAKE UP SHELL");
         }
@@ -118,16 +118,16 @@ public class Turtle extends Enemy {
 
     @Override
     public void hitOnHead(Mario mario) {
-        if(currentState == State.STANDING_SHELL) {
+        if(currentState == GopnikWithBat.State.STANDING_SHELL) {
             if(mario.b2body.getPosition().x > b2body.getPosition().x)
                 velocity.x = -2;
             else
                 velocity.x = 2;
-            currentState = State.MOVING_SHELL;
+            currentState = GopnikWithBat.State.MOVING_SHELL;
             System.out.println("Set to moving shell");
         }
         else {
-            currentState = State.STANDING_SHELL;
+            currentState = GopnikWithBat.State.STANDING_SHELL;
             velocity.x = 0;
         }
     }
@@ -139,6 +139,7 @@ public class Turtle extends Enemy {
 
     public void kick(int direction){
         velocity.x = direction;
-        currentState = State.MOVING_SHELL;
+        currentState = GopnikWithBat.State.MOVING_SHELL;
     }
 }
+

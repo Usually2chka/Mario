@@ -18,9 +18,7 @@ import com.mygdx.game.Sprites.Enemies.Turtle;
 import com.mygdx.game.Sprites.TileObjects.Brick;
 import com.mygdx.game.Sprites.TileObjects.Coin;
 
-/**
- * Created by brentaureli on 8/28/15.
- */
+
 public class B2WorldCreator {
     private Array<Goomba> goombas;
     private Array<Turtle> turtles;

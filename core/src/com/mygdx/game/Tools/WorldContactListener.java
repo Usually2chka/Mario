@@ -1,6 +1,5 @@
 package com.mygdx.game.Tools;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.physics.box2d.Contact;
 import com.badlogic.gdx.physics.box2d.ContactImpulse;
 import com.badlogic.gdx.physics.box2d.ContactListener;
@@ -11,10 +10,9 @@ import com.mygdx.game.Sprites.Enemies.Enemy;
 import com.mygdx.game.Sprites.Items.Item;
 import com.mygdx.game.Sprites.Mario;
 import com.mygdx.game.Sprites.Other.FireBall;
+import com.mygdx.game.Sprites.TileObjects.InteractiveTileObject;
 
-/**
- * Created by brentaureli on 9/4/15.
- */
+
 public class WorldContactListener implements ContactListener {
     @Override
     public void beginContact(Contact contact) {

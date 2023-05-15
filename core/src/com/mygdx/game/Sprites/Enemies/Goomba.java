@@ -14,10 +14,8 @@ import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Mario;
 
-/**
- * Created by brentaureli on 9/14/15.
- */
-public class Goomba extends com.mygdx.game.Sprites.Enemies.Enemy { //com.mygdx.game.Sprites.Enemies.Enemy
+public class Goomba extends com.mygdx.game.Sprites.Enemies.Turtle {
+
     private float stateTime;
     private Animation walkAnimation;
     private Array<TextureRegion> frames;
@@ -50,7 +48,7 @@ public class Goomba extends com.mygdx.game.Sprites.Enemies.Enemy { //com.mygdx.g
         else if(!destroyed) {
             b2body.setLinearVelocity(velocity);
             setPosition(b2body.getPosition().x - getWidth() / 2, b2body.getPosition().y - getHeight() / 2);
-            setRegion(walkAnimation.getKeyFrame(stateTime, true));
+            setRegion((TextureRegion) walkAnimation.getKeyFrame(stateTime, true));
         }
     }
 

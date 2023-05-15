@@ -8,16 +8,12 @@ import com.badlogic.gdx.physics.box2d.Body;
 import com.badlogic.gdx.physics.box2d.BodyDef;
 import com.badlogic.gdx.physics.box2d.CircleShape;
 import com.badlogic.gdx.physics.box2d.FixtureDef;
-import com.badlogic.gdx.physics.box2d.PolygonShape;
 import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
 
 
-/**
- * Created by brentaureli on 10/12/15.
- */
 public class FireBall extends Sprite {
 
     PlayScreen screen;
@@ -39,7 +35,7 @@ public class FireBall extends Sprite {
             frames.add(new TextureRegion(screen.getAtlas().findRegion("fireball"), i * 8, 0, 8, 8));
         }
         fireAnimation = new Animation(0.2f, frames);
-        setRegion(fireAnimation.getKeyFrame(0));
+        setRegion((TextureRegion) fireAnimation.getKeyFrame(0));
         setBounds(x, y, 6 / MarioBros.PPM, 6 / MarioBros.PPM);
         defineFireBall();
     }
@@ -70,7 +66,7 @@ public class FireBall extends Sprite {
 
     public void update(float dt){
         stateTime += dt;
-        setRegion(fireAnimation.getKeyFrame(stateTime, true));
+        setRegion((TextureRegion) fireAnimation.getKeyFrame(stateTime, true));
         setPosition(b2body.getPosition().x - getWidth() / 2, b2body.getPosition().y - getHeight() / 2);
         if((stateTime > 3 || setToDestroy) && !destroyed) {
             world.destroyBody(b2body);

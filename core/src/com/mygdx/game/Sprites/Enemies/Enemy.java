@@ -7,9 +7,6 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Mario;
 
-/**
- * Created by brentaureli on 9/14/15.
- */
 public abstract class Enemy extends Sprite {
     protected World world;
     protected PlayScreen screen;

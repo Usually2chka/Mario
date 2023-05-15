@@ -26,11 +26,10 @@ import com.mygdx.game.Sprites.Mario;
 import com.mygdx.game.Tools.B2WorldCreator;
 import com.mygdx.game.Tools.WorldContactListener;
 
+import java.util.PriorityQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-/**
- * Created by brentaureli on 8/14/15.
- */
+
 public class PlayScreen implements Screen{
     //Reference to our Game, used to set Screens
     private MarioBros game;

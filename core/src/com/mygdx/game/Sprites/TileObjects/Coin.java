@@ -3,22 +3,15 @@ package com.mygdx.game.Sprites.TileObjects;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.maps.MapObject;
 import com.badlogic.gdx.maps.tiled.TiledMapTileSet;
-import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
-import com.brentaureli.mariobros.MarioBros;
-import com.brentaureli.mariobros.Scenes.Hud;
-import com.brentaureli.mariobros.Screens.PlayScreen;
-import com.brentaureli.mariobros.Sprites.Items.ItemDef;
-import com.brentaureli.mariobros.Sprites.Items.Mushroom;
-import com.brentaureli.mariobros.Sprites.Mario;
 import com.mygdx.game.MarioBros;
 import com.mygdx.game.Scenes.Hud;
 import com.mygdx.game.Screens.PlayScreen;
+import com.mygdx.game.Sprites.Items.ItemDef;
+import com.mygdx.game.Sprites.Items.Mushroom;
 import com.mygdx.game.Sprites.Mario;
 
-/**
- * Created by brentaureli on 8/28/15.
- */
+
 public class Coin extends InteractiveTileObject {
     private static TiledMapTileSet tileSet;
     private final int BLANK_COIN = 28;
