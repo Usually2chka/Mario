@@ -14,6 +14,7 @@ import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Enemies.Enemy;
 import com.mygdx.game.Sprites.Enemies.Goomba;
+import com.mygdx.game.Sprites.Enemies.GopnikWithBat;
 import com.mygdx.game.Sprites.Enemies.Turtle;
 import com.mygdx.game.Sprites.TileObjects.Brick;
 import com.mygdx.game.Sprites.TileObjects.Coin;
@@ -21,7 +22,8 @@ import com.mygdx.game.Sprites.TileObjects.Coin;
 
 public class B2WorldCreator {
     private Array<Goomba> goombas;
-    private Array<Turtle> turtles;
+    private Array<GopnikWithBat> turtles;
+    //private Array<GopnikWithBat> gopnikWithBats; Turtle
 
     public B2WorldCreator(PlayScreen screen){
         World world = screen.getWorld();
@@ -78,10 +80,15 @@ public class B2WorldCreator {
             Rectangle rect = ((RectangleMapObject) object).getRectangle();
             goombas.add(new Goomba(screen, rect.getX() / MarioBros.PPM, rect.getY() / MarioBros.PPM));
         }
-        turtles = new Array<Turtle>();
+        /*turtles = new Array<Turtle>();
         for(MapObject object : map.getLayers().get(7).getObjects().getByType(RectangleMapObject.class)){
             Rectangle rect = ((RectangleMapObject) object).getRectangle();
             turtles.add(new Turtle(screen, rect.getX() / MarioBros.PPM, rect.getY() / MarioBros.PPM));
+        }*/
+        turtles = new Array<GopnikWithBat>();
+        for(MapObject object : map.getLayers().get(7).getObjects().getByType(RectangleMapObject.class)){
+            Rectangle rect = ((RectangleMapObject) object).getRectangle();
+            turtles.add(new GopnikWithBat(screen, rect.getX() / MarioBros.PPM, rect.getY() / MarioBros.PPM));
         }
     }
 

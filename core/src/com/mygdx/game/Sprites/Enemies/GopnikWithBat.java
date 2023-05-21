@@ -1,6 +1,7 @@
 package com.mygdx.game.Sprites.Enemies;
 
 import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.physics.box2d.BodyDef;
@@ -24,15 +25,17 @@ public class GopnikWithBat extends Enemy{
     private TextureRegion shell;
     private boolean setToDestroy;
     private boolean destroyed;
-
+    private TextureAtlas atlas;
 
 
     public GopnikWithBat(PlayScreen screen, float x, float y) {
         super(screen, x, y);
+
+        atlas = new TextureAtlas("NewTexure/Animetion/Enemy/forgame.atlas");
         frames = new Array<TextureRegion>();
-        frames.add(new TextureRegion(screen.getAtlas().findRegion("GopnikWithBat"), 0, 0, 16, 24));
-        frames.add(new TextureRegion(screen.getAtlas().findRegion("GopnikWithBat"), 16, 0, 16, 24));
-        shell = new TextureRegion(screen.getAtlas().findRegion("GopnikWithBat"), 64, 0, 16, 24);
+        frames.add(new TextureRegion(atlas.findRegion("Idle1"), 64, 0, 16, 24)); // 64x16x24
+        frames.add(new TextureRegion(atlas.findRegion("Idle1"), 64, 0, 16, 24)); // 64x16x24
+        shell = new TextureRegion(atlas.findRegion("Idle1"), 64, 0, 16, 24);     // 64, 0, 16, 24 //192, 0, 16, 48
         walkAnimation = new Animation(0.2f, frames);
         currentState = previousState = GopnikWithBat.State.WALKING;
 
