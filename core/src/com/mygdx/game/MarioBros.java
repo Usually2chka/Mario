@@ -5,7 +5,7 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.mygdx.game.Screens.PlayScreen;
+import com.mygdx.game.Screens.StartScreen;
 
 public class MarioBros extends Game {
 	//Virtual Screen size and Box2D Scale(Pixels Per Meter)
@@ -49,8 +49,8 @@ public class MarioBros extends Game {
 		manager.load("audio/sounds/mariodie.wav", Sound.class);
 
 		manager.finishLoading();
-
-		setScreen(new PlayScreen(this));
+		setScreen(new StartScreen(this));
+		//setScreen(new PlayScreen(this));
 	}
 
 

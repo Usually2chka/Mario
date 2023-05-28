@@ -6,7 +6,7 @@ import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.Manifold;
 import com.mygdx.game.MarioBros;
-import com.mygdx.game.Sprites.Enemies.Enemy;
+import com.mygdx.game.Sprites.Other.Enemies.Enemy;
 import com.mygdx.game.Sprites.Items.Item;
 import com.mygdx.game.Sprites.Mario;
 import com.mygdx.game.Sprites.Other.FireBall;

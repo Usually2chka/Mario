@@ -1,4 +1,4 @@
-package com.mygdx.game.Sprites.Enemies;
+package com.mygdx.game.Sprites.Other.Enemies;
 
 import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;

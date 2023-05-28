@@ -12,10 +12,9 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
-import com.mygdx.game.Sprites.Enemies.Enemy;
-import com.mygdx.game.Sprites.Enemies.Goomba;
-import com.mygdx.game.Sprites.Enemies.GopnikWithBat;
-import com.mygdx.game.Sprites.Enemies.Turtle;
+import com.mygdx.game.Sprites.Other.Enemies.Enemy;
+import com.mygdx.game.Sprites.Other.Enemies.Goomba;
+import com.mygdx.game.Sprites.Other.Enemies.GopnikWithBat;
 import com.mygdx.game.Sprites.TileObjects.Brick;
 import com.mygdx.game.Sprites.TileObjects.Coin;
 

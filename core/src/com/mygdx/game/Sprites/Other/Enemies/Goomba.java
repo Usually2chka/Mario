@@ -1,4 +1,4 @@
-package com.mygdx.game.Sprites.Enemies;
+package com.mygdx.game.Sprites.Other.Enemies;
 
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.Animation;
@@ -14,7 +14,7 @@ import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Mario;
 
-public class Goomba extends com.mygdx.game.Sprites.Enemies.Turtle {
+public class Goomba extends Turtle {
 
     private float stateTime;
     private Animation walkAnimation;

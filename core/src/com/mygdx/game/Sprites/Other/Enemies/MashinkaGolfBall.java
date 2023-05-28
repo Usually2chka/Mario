@@ -1,4 +1,4 @@
-package com.mygdx.game.Sprites.Enemies;
+package com.mygdx.game.Sprites.Other.Enemies;
 
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Mario;
