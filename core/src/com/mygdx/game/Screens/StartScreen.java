@@ -22,48 +22,30 @@ import com.mygdx.game.MarioBros;
 public class StartScreen implements Screen {
     private Viewport viewport;
     private Stage stage;
-    private Game game;
-    private Texture backGroung;
 
-    public StartScreen(Game game){
-        backGroung = new Texture("F:\\AnS\\Project\\MarioGame\\assets\\NewTexure\\ImgForBackGround\\backGroung.png");
+    private Game game;
+    Texture imgBackGround; // фон
+
+    public StartScreen(MarioBros game){
         this.game = game;
+
         viewport = new FitViewport(MarioBros.V_WIDTH, MarioBros.V_HEIGHT, new OrthographicCamera());
         stage = new Stage(viewport, ((MarioBros) game).batch);
+
         Label.LabelStyle font = new Label.LabelStyle(new BitmapFont(), Color.WHITE);
 
-
-        Skin skin = new Skin();
-        TextureAtlas atlas = new TextureAtlas("Кнопочка.png");
-        skin.addRegions(atlas);
-        skin.load(Gdx.files.internal(""));
-
-        Button StartPlayButton = new Button(skin, "default");
-        stage.addActor(StartPlayButton);
-
-
-        Table table1 = new Table();
-        table1.center();
-        table1.setFillParent(true);
-
-        Label buttonExit = new Label("Exit", font);
-
-        table1.row();
-        table1.add(buttonExit).expandX();
-
-        stage.addActor(table1);
-
-
-
-        //1-я кнопка   (просто надпись....) (Тут нет кнопок, есть только надписи)
         Table table = new Table();
         table.center();
         table.setFillParent(true);
 
-        Label playAgainLabel = new Label("Click to play", font);
+//        Label gameOverLabel = new Label("GAME OVER", font);
+        Label playAgainLabel = new Label("Click to Play ", font);
 
-        table.row();
-        table.add(playAgainLabel).expandX();
+//        table.add(gameOverLabel).expandX();
+//        table.row();
+//        table.setBackground("/Users/anastasiatarazevich/Downloads/MarioGame/assets/tileset_gutter.png");
+
+        table.add(playAgainLabel).expandX().padTop(10f);
 
         stage.addActor(table);
     }
@@ -75,19 +57,13 @@ public class StartScreen implements Screen {
 
     @Override
     public void render(float delta) {
-
         if(Gdx.input.justTouched()) {
             game.setScreen(new PlayScreen((MarioBros) game));
             dispose();
         }
         Gdx.gl.glClearColor(0, 0, 0, 1);
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
-
         stage.draw();
-
-
-
-
     }
 
     @Override
@@ -112,6 +88,6 @@ public class StartScreen implements Screen {
 
     @Override
     public void dispose() {
-
+        stage.dispose();
     }
 }

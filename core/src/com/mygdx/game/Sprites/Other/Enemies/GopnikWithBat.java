@@ -31,15 +31,16 @@ public class GopnikWithBat extends Enemy{
     public GopnikWithBat(PlayScreen screen, float x, float y) {
         super(screen, x, y);
 
-        atlas = new TextureAtlas("NewTexure/Animetion/Enemy/forgame.atlas");
+        atlas = new TextureAtlas("forgame_main.atlas");
         frames = new Array<TextureRegion>();
-        frames.add(new TextureRegion(atlas.findRegion("Idle1"), 64, 0, 16, 24)); // 64x16x24
-        frames.add(new TextureRegion(atlas.findRegion("Idle1"), 64, 0, 16, 24)); // 64x16x24
-        shell = new TextureRegion(atlas.findRegion("Idle1"), 64, 0, 16, 24);     // 64, 0, 16, 24 //192, 0, 16, 48
+        frames.add(new TextureRegion(atlas.findRegion("Walk6"), 0, 0, 50, 50)); // 64x16x24
+        frames.add(new TextureRegion(atlas.findRegion("Walk6"), 48, 0, 50, 50)); // 64x16x24
+        shell = new TextureRegion(atlas.findRegion("Walk6"), 96, 0, 50, 50);     // 64, 0, 16, 24 //192, 0, 16, 48
+        shell = new TextureRegion(atlas.findRegion("Walk6"), 144, 0, 50, 50);     // 64, 0, 16, 24 //192, 0, 16, 48
         walkAnimation = new Animation(0.2f, frames);
         currentState = previousState = GopnikWithBat.State.WALKING;
 
-        setBounds(getX(), getY(), 16 / MarioBros.PPM, 24 / MarioBros.PPM);
+        setBounds(getX(), getY(), 50 / MarioBros.PPM, 50 / MarioBros.PPM);
 
     }
 
@@ -134,6 +135,8 @@ public class GopnikWithBat extends Enemy{
             velocity.x = 0;
         }
     }
+
+
 
     @Override
     public void hitByEnemy(Enemy enemy) {

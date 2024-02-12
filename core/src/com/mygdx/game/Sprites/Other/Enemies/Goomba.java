@@ -13,6 +13,7 @@ import com.badlogic.gdx.utils.Array;
 import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Sprites.Mario;
+import com.mygdx.game.Sprites.Other.FireBall;
 
 public class Goomba extends Turtle {
 
@@ -25,13 +26,17 @@ public class Goomba extends Turtle {
 
 
     public Goomba(PlayScreen screen, float x, float y) {
-        super(screen, x, y);
+        super(screen, x+10, y);
         frames = new Array<TextureRegion>();
-        for(int i = 0; i < 2; i++)
-            frames.add(new TextureRegion(screen.getAtlas().findRegion("goomba"), i * 16, 0, 16, 16));
-        walkAnimation = new Animation(0.4f, frames);
+//        for(int i = 0; i < 2; i++)
+            frames.add(new TextureRegion(screen.getAtlasEnemy1().findRegion("Attack4"), 0, 0, 48, 50));
+            frames.add(new TextureRegion(screen.getAtlasEnemy1().findRegion("Attack4"), 48, 0, 48, 50));
+            frames.add(new TextureRegion(screen.getAtlasEnemy1().findRegion("Attack4"), 96, 0, 48, 50));
+            frames.add(new TextureRegion(screen.getAtlasEnemy1().findRegion("Attack4"), 144, 0, 48, 50));
+        walkAnimation = new Animation(0.2f, frames);
+        frames.clear();
         stateTime = 0;
-        setBounds(getX(), getY(), 16 / MarioBros.PPM, 16 / MarioBros.PPM);
+        setBounds(getX(), getY(), 50 / MarioBros.PPM, 50 / MarioBros.PPM);
         setToDestroy = false;
         destroyed = false;
         angle = 0;
@@ -42,12 +47,12 @@ public class Goomba extends Turtle {
         if(setToDestroy && !destroyed){
             world.destroyBody(b2body);
             destroyed = true;
-            setRegion(new TextureRegion(screen.getAtlas().findRegion("goomba"), 32, 0, 16, 16));
+            setRegion(new TextureRegion(screen.getAtlasEnemy1().findRegion("Hurt4"), 48, 0, 48, 50));
             stateTime = 0;
         }
         else if(!destroyed) {
             b2body.setLinearVelocity(velocity);
-            setPosition(b2body.getPosition().x - getWidth() / 2, b2body.getPosition().y - getHeight() / 2);
+            setPosition(b2body.getPosition().x - getWidth() / 2, b2body.getPosition().y -0.1f);
             setRegion((TextureRegion) walkAnimation.getKeyFrame(stateTime, true));
         }
     }
@@ -62,13 +67,15 @@ public class Goomba extends Turtle {
         FixtureDef fdef = new FixtureDef();
         CircleShape shape = new CircleShape();
         shape.setRadius(6 / MarioBros.PPM);
-        fdef.filter.categoryBits = MarioBros.ENEMY_BIT;
+        fdef.filter.categoryBits = MarioBros.ENEMY_BIT ;
         fdef.filter.maskBits = MarioBros.GROUND_BIT |
                 MarioBros.COIN_BIT |
                 MarioBros.BRICK_BIT |
                 MarioBros.ENEMY_BIT |
                 MarioBros.OBJECT_BIT |
-                MarioBros.MARIO_BIT;
+                MarioBros.MARIO_BIT ;
+//                MarioBros.FIREBALL_BIT
+        ;
 
         fdef.shape = shape;
         b2body.createFixture(fdef).setUserData(this);
@@ -84,9 +91,10 @@ public class Goomba extends Turtle {
 
         fdef.shape = head;
         fdef.restitution = 0.5f;
-        fdef.filter.categoryBits = MarioBros.ENEMY_HEAD_BIT;
+//        fdef.filter.categoryBits = MarioBros.ENEMY_HEAD_BIT | MarioBros.FIREBALL_BIT;
+        fdef.filter.categoryBits = MarioBros.ENEMY_HEAD_BIT ;
         b2body.createFixture(fdef).setUserData(this);
-
+//b2body.setTransform(10f, 0.7f,0);
     }
 
     public void draw(Batch batch){
@@ -101,6 +109,13 @@ public class Goomba extends Turtle {
         setToDestroy = true;
         MarioBros.manager.get("audio/sounds/stomp.wav", Sound.class).play();
     }
+
+
+    public void hitOnHeadBall(FireBall mario) {
+        setToDestroy = true;
+        MarioBros.manager.get("audio/sounds/stomp.wav", Sound.class).play();
+    }
+
 
     @Override
     public void hitByEnemy(Enemy enemy) {

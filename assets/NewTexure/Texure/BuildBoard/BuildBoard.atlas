@@ -1,0 +1,62 @@
+
+BuildBoard.png
+size: 512, 128
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+128x64
+  rotate: false
+  xy: 2, 2
+  size: 134, 105
+  orig: 134, 105
+  offset: 0, 0
+  index: 2
+128x64
+  rotate: false
+  xy: 138, 37
+  size: 134, 70
+  orig: 134, 70
+  offset: 0, 0
+  index: -1
+22x40
+  rotate: false
+  xy: 418, 57
+  size: 30, 50
+  orig: 30, 50
+  offset: 0, 0
+  index: 2
+22x40
+  rotate: false
+  xy: 418, 9
+  size: 28, 46
+  orig: 28, 46
+  offset: 0, 0
+  index: -1
+64x64
+  rotate: false
+  xy: 274, 37
+  size: 70, 70
+  orig: 70, 70
+  offset: 0, 0
+  index: -1
+64x64
+  rotate: false
+  xy: 346, 2
+  size: 70, 105
+  orig: 70, 105
+  offset: 0, 0
+  index: 2
+Pillar
+  rotate: false
+  xy: 450, 75
+  size: 20, 32
+  orig: 20, 32
+  offset: 0, 0
+  index: -1
+Pillar2
+  rotate: false
+  xy: 138, 3
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

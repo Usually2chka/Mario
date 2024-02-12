@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="200" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="26">
+ <tileset firstgid="1" source="Texures/AllTiles/Tiles.tsx"/>
+ <tileset firstgid="158" source="Texures/AllTiles/BackGround.tsx"/>
+ <tileset firstgid="216" source="Texures/AllTiles/Object.tsx"/>
+ <tileset firstgid="291" source="Texures/AllTiles/Bodies.tsx"/>
+ <tileset firstgid="331" source="Texures/AllTiles/Ad.tsx"/>
+ <tileset firstgid="384" source="16x16/Proba.tsx"/>
+ <objectgroup id="5" name="Floor">
+  <object id="1" x="0" y="272">
+   <polygon points="0,0 3200,0 3200,16 0,16"/>
+  </object>
+  <object id="11" x="16" y="272">
+   <polygon points="0,0 0,-272 -16,-272 -16,0"/>
+  </object>
+  <object id="14" x="176.091" y="225.091">
+   <polygon points="0,0 19.4091,39.0341 19.5341,46.7216 0.0340909,46.8466"/>
+  </object>
+  <object id="15" x="144.063" y="224.813" width="32.125" height="47.1875"/>
+  <object id="16" x="1456.06" y="224.938" width="31.125" height="46.9375"/>
+  <object id="17" x="1792.18" y="226.727" width="42.9091" height="45.0909"/>
+  <object id="18" x="1936.67" y="215" width="404.333" height="55"/>
+  <object id="19" x="2016" y="155" width="205.667" height="58.3333"/>
+  <object id="20" x="2431.73" y="226.909" width="43" height="45.2727"/>
+  <object id="21" x="2576.82" y="255.727" width="30" height="17.0909"/>
+  <object id="22" x="2703.73" y="239.909" width="32.1818" height="31.6364"/>
+  <object id="23" x="2832.75" y="208.125" width="30.5" height="62.875"/>
+  <object id="24" x="2992.25" y="130.5" width="74.5" height="141"/>
+  <object id="25" x="1168.25" y="255.5" width="31.25" height="16.5"/>
+ </objectgroup>
+ <group id="2" name="Stages">
+  <group id="6" name="BackStages">
+   <layer id="12" name="FourthStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJztz7ENAEAIAzH2H46Z6L/7AiGBvUAuEQAAAAAAAAAAAAAAAAAAcEdOBzy29Gz50WWy52e7AIM/BaM=
+  </data>
+   </layer>
+   <layer id="7" name="ThirdStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJzt0rENACAMBLHsPxZCNCxFi7LAp7AnuOKqAAAAAAAAAAAAAAAAmOymA5qTDhhupQOanQ74eAcAYL4H8e4D3g==
+  </data>
+   </layer>
+   <layer id="10" name="SecondStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJztzqENgEAQBMDrv6UPCvEhoSgsWYNcxEwFMwMAAAAAAAAAAAAAAMCfrXYgHO1AONuBsNuBl6sdCHc7AADApwcP0QSY
+  </data>
+   </layer>
+   <layer id="11" name="FirstStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJzt0qENACAAxED23wpBgmEn/DvUI+4mqOgYAAAAAAAAAAAAAAAA/Oy0A8JuB4TVDgizHRD8AwDAiwtF/ASx
+  </data>
+   </layer>
+  </group>
+  <layer id="9" name="ThirdStage" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt2k0OgjAQhuF2qwuNJ2DB2h3n8CzewP+fW3hLXToxmqC20qbSOuZ9kgk4QEIsn7MQYwDgN0w7+l3HAQC6NVK1o1+3yuVT33fdo9fE3CBQ0MIas5RaSa2lNjZPD9BgK8/qTmovdZA62vCe67kPvRbQIPT3nnz0Y2bM6eVzVeZO4JIyK8gH/h3zA/BjfugzsM9b9If5oQ/5yKf0/BiyxtHIRz7MD33IRz6l58dI9sescxTykQ/zQx/ykQ//n+uTko+K7z7Kt9+risnHhLW6uUidI85Pycf8XgiTMj9SeiiDfAB+5AN4dwWaXuUg
+  </data>
+  </layer>
+  <layer id="4" name="SecondStage" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt2bFuwjAQgGHzDEzdUMdKLV26AxtLyyOwdUCM7C3tg/QZi8RcpzVSGmISg+9ik/+TTiSXODmUOAeKMQAQ10ND3rcd6JPHM7efOw7IxfvAmK2NDxufNt4G8jmgz2bGLIvoug78eQp4JkntW7jj2fhr1nUB+GceeF9esn/o2JQslJ7pdn5MNM5zTUYZ31e5882LF6H7+NA/6o4vdU74Va//Jeu+Ze31mGN9BOeHyHEBbXaOjA5RyX9V1pdtotiX/hFu5SIHN10XEEGb7yDdP55doD9e7bWXCol6FxIHbVDuH1O3PC3l9CtKH/1DVwr9A8Ax/n+Eu5b+sVbIxZBC/2B+IGca7z82bnlTykmcE3puuy6gwX2Ld60pfAdf/xi6+r9rxuxlSwomVc/uxLZhxu/S1zXXPHZOy1j4k99XAADk6wcLF1vy
+  </data>
+  </layer>
+  <layer id="8" name="ForObjectsOnSecondStage" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt2DEKwjAUxvGXxTu4KDg7V5x09QrOtefoUTyKx3Fw11HBdimFJvrSlzb/H4RAWsgHKfmgIgAAAIC9vdEMAAAAIF+l8lrX5TvqkEwA0Fo76wRAng4iV+sMGN9pRncu/QHYoD8wdSv6I1mx/1/FUjg5Gm4/GfRH+s7WARK3tA4QSd+5a6/1qZo+LullDPDpj4Xz65jXZzybYaHdP9RDO4iSXWf+VRFwD/i8ux35Xtn8+Rw67iI36ww54vsGAMzNG56mGN4=
+  </data>
+  </layer>
+  <layer id="1" name="FirstStages" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt1zEOgjAUgOGyusrk4g04g0djc2D1AB7FwxBNdDMx6iYkbcQipMWHLeH/kuaVQMuj8FCUAgAAAAAAADB1hRUBfNZD1d+HygNh7CKJ9vs5lggAAOBioRvi9gydAABY+P2I2yoJncG8zak2ytAJYJJ8a+Q+ShbjKhttDEvB97zJ8+Q5bpGoXC4LebHn941LbaT63td18dCt7l8GnjP9038Gcx7zvB2tvkRO5wHz1Ot3U+91lFI9fwfB6cQ187sGzMNH8/sjs/ZlxFYsHI/LHI/rGifVpK9/yPV07Mut+MtcvWP61sVnHY0134RAy1bHqj42zW0ikajUCy4lfj4=
+  </data>
+  </layer>
+ </group>
+</map>

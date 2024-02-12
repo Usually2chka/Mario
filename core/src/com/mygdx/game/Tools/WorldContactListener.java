@@ -9,6 +9,7 @@ import com.mygdx.game.MarioBros;
 import com.mygdx.game.Sprites.Other.Enemies.Enemy;
 import com.mygdx.game.Sprites.Items.Item;
 import com.mygdx.game.Sprites.Mario;
+import com.mygdx.game.Sprites.Other.Enemies.Goomba;
 import com.mygdx.game.Sprites.Other.FireBall;
 import com.mygdx.game.Sprites.TileObjects.InteractiveTileObject;
 
@@ -35,6 +36,16 @@ public class WorldContactListener implements ContactListener {
                 else
                     ((Enemy)fixB.getUserData()).hitOnHead((Mario) fixA.getUserData());
                 break;
+
+
+            case MarioBros.ENEMY_HEAD_BIT | MarioBros.FIREBALL_BIT:
+                if(fixA.getFilterData().categoryBits == MarioBros.ENEMY_HEAD_BIT)
+                    ((Goomba)fixA.getUserData()).hitOnHeadBall((FireBall) fixB.getUserData());
+                else
+                    ((Goomba)fixB.getUserData()).hitOnHeadBall((FireBall) fixA.getUserData());
+                break;
+
+
             case MarioBros.ENEMY_BIT | MarioBros.OBJECT_BIT:
                 if(fixA.getFilterData().categoryBits == MarioBros.ENEMY_BIT)
                     ((Enemy)fixA.getUserData()).reverseVelocity(true, false);

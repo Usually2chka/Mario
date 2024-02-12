@@ -5,6 +5,7 @@ import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.audio.Sound;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.mygdx.game.Screens.PlayScreen;
 import com.mygdx.game.Screens.StartScreen;
 
 public class MarioBros extends Game {
@@ -49,8 +50,8 @@ public class MarioBros extends Game {
 		manager.load("audio/sounds/mariodie.wav", Sound.class);
 
 		manager.finishLoading();
+//		setScreen(new StartScreen(this));
 		setScreen(new StartScreen(this));
-		//setScreen(new PlayScreen(this));
 	}
 
 

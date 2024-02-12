@@ -1,0 +1,755 @@
+
+Buildings.png
+size: 2048, 128
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+0
+  rotate: false
+  xy: 1470, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+1
+  rotate: false
+  xy: 1198, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 1572, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 1266, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 1130, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 1504, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 1232, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 1606, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 1436, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+9
+  rotate: false
+  xy: 1164, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Barrel1
+  rotate: false
+  xy: 2028, 72
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+Barrel2
+  rotate: false
+  xy: 22, 2
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+Barrel3
+  rotate: false
+  xy: 2, 2
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+Barrel4
+  rotate: false
+  xy: 2028, 100
+  size: 18, 26
+  orig: 18, 26
+  offset: 0, 0
+  index: -1
+Bench
+  rotate: false
+  xy: 1368, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Board1
+  rotate: false
+  xy: 1892, 94
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Board2
+  rotate: false
+  xy: 220, 11
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Board3
+  rotate: false
+  xy: 220, 45
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box1
+  rotate: false
+  xy: 254, 11
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box2
+  rotate: false
+  xy: 254, 45
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box3
+  rotate: false
+  xy: 42, 4
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box4
+  rotate: false
+  xy: 390, 44
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box5
+  rotate: false
+  xy: 118, 45
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box6
+  rotate: false
+  xy: 356, 10
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box7
+  rotate: false
+  xy: 322, 44
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Box8
+  rotate: false
+  xy: 1926, 94
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Bucket
+  rotate: false
+  xy: 1062, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Buildings1
+  rotate: false
+  xy: 381, 78
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Buildings10
+  rotate: false
+  xy: 654, 84
+  size: 32, 8
+  orig: 32, 8
+  offset: 0, 0
+  index: -1
+Buildings11
+  rotate: false
+  xy: 791, 76
+  size: 8, 16
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+Buildings12
+  rotate: false
+  xy: 200, 79
+  size: 64, 47
+  orig: 64, 47
+  offset: 0, 0
+  index: -1
+Buildings13
+  rotate: false
+  xy: 1055, 67
+  size: 8, 14
+  orig: 8, 14
+  offset: 0, 0
+  index: -1
+Buildings14
+  rotate: false
+  xy: 801, 75
+  size: 6, 11
+  orig: 6, 11
+  offset: 0, 0
+  index: -1
+Buildings15
+  rotate: false
+  xy: 551, 31
+  size: 8, 11
+  orig: 8, 11
+  offset: 0, 0
+  index: -1
+Buildings16
+  rotate: false
+  xy: 549, 62
+  size: 12, 14
+  orig: 12, 14
+  offset: 0, 0
+  index: -1
+Buildings17
+  rotate: false
+  xy: 1675, 110
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+Buildings18
+  rotate: false
+  xy: 1725, 110
+  size: 48, 16
+  orig: 48, 16
+  offset: 0, 0
+  index: -1
+Buildings19
+  rotate: false
+  xy: 118, 79
+  size: 80, 47
+  orig: 80, 47
+  offset: 0, 0
+  index: -1
+Buildings2
+  rotate: false
+  xy: 654, 94
+  size: 48, 32
+  orig: 48, 32
+  offset: 0, 0
+  index: -1
+Buildings20
+  rotate: false
+  xy: 36, 61
+  size: 79, 15
+  orig: 79, 15
+  offset: 0, 0
+  index: -1
+Buildings21
+  rotate: false
+  xy: 981, 62
+  size: 15, 64
+  orig: 15, 64
+  offset: 0, 0
+  index: -1
+Buildings22
+  rotate: false
+  xy: 963, 62
+  size: 16, 64
+  orig: 16, 64
+  offset: 0, 0
+  index: -1
+Buildings23
+  rotate: false
+  xy: 534, 29
+  size: 15, 31
+  orig: 15, 31
+  offset: 0, 0
+  index: -1
+Buildings24
+  rotate: false
+  xy: 724, 77
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+Buildings25
+  rotate: false
+  xy: 1823, 110
+  size: 33, 16
+  orig: 33, 16
+  offset: 0, 0
+  index: -1
+Buildings26
+  rotate: false
+  xy: 2, 30
+  size: 32, 96
+  orig: 32, 96
+  offset: 0, 0
+  index: -1
+Buildings27
+  rotate: false
+  xy: 1960, 94
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Buildings28
+  rotate: false
+  xy: 288, 11
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Buildings29
+  rotate: false
+  xy: 753, 94
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+Buildings3
+  rotate: false
+  xy: 1031, 59
+  size: 22, 22
+  orig: 22, 22
+  offset: 0, 0
+  index: -1
+Buildings30
+  rotate: false
+  xy: 704, 94
+  size: 47, 32
+  orig: 47, 32
+  offset: 0, 0
+  index: -1
+Buildings31
+  rotate: false
+  xy: 688, 77
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+Buildings32
+  rotate: false
+  xy: 551, 44
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+Buildings33
+  rotate: false
+  xy: 757, 76
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+Buildings34
+  rotate: false
+  xy: 424, 2
+  size: 26, 16
+  orig: 26, 16
+  offset: 0, 0
+  index: -1
+Buildings35
+  rotate: false
+  xy: 498, 10
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+Buildings36
+  rotate: false
+  xy: 998, 62
+  size: 31, 15
+  orig: 31, 15
+  offset: 0, 0
+  index: -1
+Buildings37
+  rotate: false
+  xy: 515, 62
+  size: 32, 14
+  orig: 32, 14
+  offset: 0, 0
+  index: -1
+Buildings38
+  rotate: false
+  xy: 741, 76
+  size: 14, 16
+  orig: 14, 16
+  offset: 0, 0
+  index: -1
+Buildings39
+  rotate: false
+  xy: 1640, 94
+  size: 33, 32
+  orig: 33, 32
+  offset: 0, 0
+  index: -1
+Buildings4
+  rotate: false
+  xy: 1858, 110
+  size: 32, 16
+  orig: 32, 16
+  offset: 0, 0
+  index: -1
+Buildings40
+  rotate: false
+  xy: 76, 2
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+Buildings41
+  rotate: false
+  xy: 706, 77
+  size: 16, 15
+  orig: 16, 15
+  offset: 0, 0
+  index: -1
+Buildings42
+  rotate: false
+  xy: 998, 79
+  size: 31, 47
+  orig: 31, 47
+  offset: 0, 0
+  index: -1
+Buildings43
+  rotate: false
+  xy: 458, 16
+  size: 20, 36
+  orig: 20, 36
+  offset: 0, 0
+  index: -1
+Buildings44
+  rotate: false
+  xy: 356, 44
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Buildings45
+  rotate: false
+  xy: 1775, 110
+  size: 46, 16
+  orig: 46, 16
+  offset: 0, 0
+  index: -1
+Buildings46
+  rotate: false
+  xy: 769, 76
+  size: 10, 16
+  orig: 10, 16
+  offset: 0, 0
+  index: -1
+Buildings47
+  rotate: false
+  xy: 610, 84
+  size: 42, 42
+  orig: 42, 42
+  offset: 0, 0
+  index: -1
+Buildings48
+  rotate: false
+  xy: 944, 62
+  size: 17, 64
+  orig: 17, 64
+  offset: 0, 0
+  index: -1
+Buildings49
+  rotate: false
+  xy: 480, 4
+  size: 16, 48
+  orig: 16, 48
+  offset: 0, 0
+  index: -1
+Buildings5
+  rotate: false
+  xy: 36, 38
+  size: 46, 21
+  orig: 46, 21
+  offset: 0, 0
+  index: -1
+Buildings50
+  rotate: false
+  xy: 498, 28
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: -1
+Buildings51
+  rotate: false
+  xy: 36, 78
+  size: 80, 48
+  orig: 80, 48
+  offset: 0, 0
+  index: -1
+Buildings52
+  rotate: false
+  xy: 516, 28
+  size: 16, 32
+  orig: 16, 32
+  offset: 0, 0
+  index: -1
+Buildings53
+  rotate: false
+  xy: 842, 78
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+Buildings54
+  rotate: false
+  xy: 876, 78
+  size: 32, 48
+  orig: 32, 48
+  offset: 0, 0
+  index: -1
+Buildings55
+  rotate: false
+  xy: 517, 10
+  size: 16, 16
+  orig: 16, 16
+  offset: 0, 0
+  index: -1
+Buildings56
+  rotate: false
+  xy: 331, 78
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Buildings57
+  rotate: false
+  xy: 515, 78
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+Buildings58
+  rotate: false
+  xy: 431, 54
+  size: 48, 72
+  orig: 48, 72
+  offset: 0, 0
+  index: -1
+Buildings59
+  rotate: false
+  xy: 910, 62
+  size: 32, 64
+  orig: 32, 64
+  offset: 0, 0
+  index: -1
+Buildings6
+  rotate: false
+  xy: 802, 88
+  size: 38, 38
+  orig: 38, 38
+  offset: 0, 0
+  index: -1
+Buildings60
+  rotate: false
+  xy: 535, 11
+  size: 17, 16
+  orig: 17, 16
+  offset: 0, 0
+  index: -1
+Buildings61
+  rotate: false
+  xy: 565, 83
+  size: 43, 43
+  orig: 43, 43
+  offset: 0, 0
+  index: -1
+Buildings62
+  rotate: false
+  xy: 1031, 83
+  size: 29, 43
+  orig: 29, 43
+  offset: 0, 0
+  index: -1
+Buildings63
+  rotate: false
+  xy: 266, 79
+  size: 63, 47
+  orig: 63, 47
+  offset: 0, 0
+  index: -1
+Buildings7
+  rotate: false
+  xy: 1675, 102
+  size: 32, 6
+  orig: 32, 6
+  offset: 0, 0
+  index: -1
+Buildings8
+  rotate: false
+  xy: 76, 20
+  size: 6, 16
+  orig: 6, 16
+  offset: 0, 0
+  index: -1
+Buildings9
+  rotate: false
+  xy: 781, 76
+  size: 8, 16
+  orig: 8, 16
+  offset: 0, 0
+  index: -1
+Fence1
+  rotate: false
+  xy: 1994, 94
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Fence2
+  rotate: false
+  xy: 322, 10
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Fence3
+  rotate: false
+  xy: 288, 45
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Fire-extinguisher1
+  rotate: false
+  xy: 1538, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Fire-extinguisher2
+  rotate: false
+  xy: 1300, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Fire-extinguisher3
+  rotate: false
+  xy: 1096, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Flag
+  rotate: false
+  xy: 481, 62
+  size: 32, 64
+  orig: 32, 64
+  offset: 0, 0
+  index: -1
+Ladder1
+  rotate: false
+  xy: 118, 11
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Ladder2
+  rotate: false
+  xy: 152, 45
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Ladder3
+  rotate: false
+  xy: 390, 10
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Locker1
+  rotate: false
+  xy: 152, 11
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Locker2
+  rotate: false
+  xy: 186, 45
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Locker3
+  rotate: false
+  xy: 424, 20
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Locker4
+  rotate: false
+  xy: 1402, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Mop
+  rotate: false
+  xy: 1334, 90
+  size: 32, 36
+  orig: 32, 36
+  offset: 0, 0
+  index: -1
+Pointer1
+  rotate: false
+  xy: 84, 27
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+Pointer2
+  rotate: false
+  xy: 186, 11
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1

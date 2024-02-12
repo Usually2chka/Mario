@@ -12,6 +12,7 @@ import com.badlogic.gdx.physics.box2d.World;
 import com.badlogic.gdx.utils.Array;
 import com.mygdx.game.MarioBros;
 import com.mygdx.game.Screens.PlayScreen;
+import com.mygdx.game.Sprites.Other.Enemies.Enemy;
 
 
 public class FireBall extends Sprite {
@@ -32,7 +33,7 @@ public class FireBall extends Sprite {
         this.world = screen.getWorld();
         frames = new Array<TextureRegion>();
         for(int i = 0; i < 4; i++){
-            frames.add(new TextureRegion(screen.getAtlas().findRegion("fireball"), i * 8, 0, 8, 8));
+            frames.add(new TextureRegion(screen.getAtlasEnemy().findRegion("fireball"), i * 8, 0, 8, 8));
         }
         fireAnimation = new Animation(0.2f, frames);
         setRegion((TextureRegion) fireAnimation.getKeyFrame(0));

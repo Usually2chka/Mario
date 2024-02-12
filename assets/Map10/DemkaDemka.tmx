@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.1" orientation="orthogonal" renderorder="right-down" width="200" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="15" nextobjectid="13">
+ <tileset firstgid="1" source="Texures/AllTiles/Tiles.tsx"/>
+ <tileset firstgid="158" source="Texures/AllTiles/BackGround.tsx"/>
+ <tileset firstgid="216" source="Texures/AllTiles/Object.tsx"/>
+ <tileset firstgid="291" source="Texures/AllTiles/Bodies.tsx"/>
+ <tileset firstgid="331" source="Texures/AllTiles/Ad.tsx"/>
+ <objectgroup id="5" name="Floor">
+  <object id="1" x="0" y="272">
+   <polygon points="0,0 3200,0 3200,16 0,16"/>
+  </object>
+  <object id="11" x="16" y="272">
+   <polygon points="0,0 0,-272 -16,-272 -16,0"/>
+  </object>
+  <object id="12" x="128" y="272">
+   <polygon points="0,0 -0.1875,-7.125 2.9375,-10 2.875,-14 3.875,-15 10.75,-15 16,-16 16,-47 47.9375,-47 67.8125,-8.1875 71.8125,-8.125 72.9375,-7.0625 74.125,-6.9375 74.8125,-7.9375 75.9375,-9.0625 77.875,-9 81.875,-5.0625 81.9375,0"/>
+  </object>
+ </objectgroup>
+ <group id="2" name="Stages">
+  <group id="6" name="BackStages" visible="0">
+   <layer id="12" name="FourthStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJztz7ENAEAIAzH2H46Z6L/7AiGBvUAuEQAAAAAAAAAAAAAAAAAAcEdOBzy29Gz50WWy52e7AIM/BaM=
+  </data>
+   </layer>
+   <layer id="7" name="ThirdStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJzt0rENACAMBLHsPxZCNCxFi7LAp7AnuOKqAAAAAAAAAAAAAAAAmOymA5qTDhhupQOanQ74eAcAYL4H8e4D3g==
+  </data>
+   </layer>
+   <layer id="10" name="SecondStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJztzqENgEAQBMDrv6UPCvEhoSgsWYNcxEwFMwMAAAAAAAAAAAAAAMCfrXYgHO1AONuBsNuBl6sdCHc7AADApwcP0QSY
+  </data>
+   </layer>
+   <layer id="11" name="FirstStage" width="200" height="20">
+    <data encoding="base64" compression="zlib">
+   eJzt0qENACAAxED23wpBgmEn/DvUI+4mqOgYAAAAAAAAAAAAAAAA/Oy0A8JuB4TVDgizHRD8AwDAiwtF/ASx
+  </data>
+   </layer>
+  </group>
+  <layer id="9" name="ThirdStage" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt1j0KwjAYBuC46qB4AofOgkMnz+AdvELvv9jBQsH+U5u0fR4ITb8QCITwfiEApOHeU+9bB2Dd8nJkDfWsNpp01dv2VbV8zAEhokcI7+pbzYf+j9lXr8FavCLVgH15JjxnGvkBwBTyYz4p9FH6K2ApsfPjdOhYBDYjhT5KfzWv2PlxLvPjIkP+4hj7AMCmxc6PLUmhj6rPm/LjJqtX4+quFld8B8PIj33xPqCd9wG/PjodJmQ=
+  </data>
+  </layer>
+  <layer id="4" name="SecondStage" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt2T1uwjAUB3D3DEzdECNSSZcObJCtC3AEtg6IkZ2jcBTOxMCMIxwpCnGJ4X0l+f8ky47jOC8k5oHiHAAArdmT/th+gCH5fnH/q8cBdMFcqe6jnXOnSnusXZdtsCd3blsU7Tjg7udDf2xhmji+r3LtABTstAOI8HEdfxOfy3fGpx5ryUboO92vj4XEeQAoxNbFmuk5LvNH0/xc59RmOX/U7/8727G29DblsTGM64NlXgBpfo2My1LrP9W2t21KMRb5w44if1DP+Uk9oYI218CdP1ahwHD8+XvPVTji3XBM+kQ1fyxDe1npk4+IH/JHt1jIHwDwaIj/P6ySzh97gT4KFvIH1gd0mcT7j0NoHyp9HOeEZhz5Y0I9IbGvFu/wLVxDLH+MQvyXhmOuvCElsxZPKo718Z99wz2n7pOSMddD+n2Vhevy9bm2rVZnPf2sAQBAxg0+/Wjc
+  </data>
+  </layer>
+  <layer id="8" name="ForObjectsOnSecondStage" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt2DEKwjAUBuB08RjiAZzr6uoVnKvn8CgexeM4uOuoYF1Kh6akJqXfB49ACOTnBRJICAAAAAAAsDxN4rmu07cuMZkAAPi/Q5U7QXk2egLACGvvR3JT/19Npa7CPuP2kMwxd4CFKO396Dv31HN9zm0fmsL6wTytqnAdsu71qWdbOfz2j/VIHSSRXWccq464B4as3bpXFukewi13BgBg/t5EmhGM
+  </data>
+  </layer>
+  <layer id="1" name="FirstStages" width="200" height="20">
+   <data encoding="base64" compression="zlib">
+   eJzt1zEOgjAUxvGyuurk4g04g0djc2D1AB7FwxBNdDMx6iYkNJQaCJRHHsj/lzSvBFo/CiXRGAAAAAAAAABzl3oVQH0/5P2TVg7oOE6k+t/nqVQAAAD8j492AADArGwj7QRYikw7ABbhpR0gQOa0MawFv/M257XnuFVkErkU8qaeL9SmfPbFvniXrejfB843Nvs79n27eH2JTLeAeYr1e5pqHaXk799ZcDpxbr6HYo5QccMxtappx+vijtc1jZNq0vcfcj8N5xKvDpmrdUzbuvRZR2vHf0Lgx6Gs+f7Yu8dUKtWYL7HkfeQ=
+  </data>
+  </layer>
+ </group>
+</map>

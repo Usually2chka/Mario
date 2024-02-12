@@ -30,9 +30,9 @@ public class Turtle extends Enemy {
     public Turtle(PlayScreen screen, float x, float y) {
         super(screen, x, y);
         frames = new Array<TextureRegion>();
-        frames.add(new TextureRegion(screen.getAtlas().findRegion("turtle"), 0, 0, 16, 24));
-        frames.add(new TextureRegion(screen.getAtlas().findRegion("turtle"), 16, 0, 16, 24));
-        shell = new TextureRegion(screen.getAtlas().findRegion("turtle"), 64, 0, 16, 24);
+        frames.add(new TextureRegion(screen.getAtlasEnemy().findRegion("turtle"), 0, 0, 16, 24));
+        frames.add(new TextureRegion(screen.getAtlasEnemy().findRegion("turtle"), 16, 0, 16, 24));
+        shell = new TextureRegion(screen.getAtlasEnemy().findRegion("turtle"), 64, 0, 16, 24);
         walkAnimation = new Animation(0.2f, frames);
         currentState = previousState = State.WALKING;
 

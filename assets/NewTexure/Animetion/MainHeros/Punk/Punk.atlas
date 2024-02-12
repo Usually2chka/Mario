@@ -1,0 +1,90 @@
+
+Punk.png
+size: 2048, 128
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+Punk_attack1
+  rotate: false
+  xy: 388, 2
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1
+Punk_attack2
+  rotate: false
+  xy: 2, 2
+  size: 384, 48
+  orig: 384, 48
+  offset: 0, 0
+  index: -1
+Punk_attack3
+  rotate: false
+  xy: 2, 52
+  size: 384, 48
+  orig: 384, 48
+  offset: 0, 0
+  index: -1
+Punk_climb
+  rotate: false
+  xy: 968, 52
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1
+Punk_death
+  rotate: false
+  xy: 678, 2
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1
+Punk_doublejump
+  rotate: false
+  xy: 388, 52
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1
+Punk_hurt
+  rotate: false
+  xy: 1452, 2
+  size: 96, 48
+  orig: 96, 48
+  offset: 0, 0
+  index: -1
+Punk_idle
+  rotate: false
+  xy: 1548, 52
+  size: 192, 48
+  orig: 192, 48
+  offset: 0, 0
+  index: -1
+Punk_jump
+  rotate: false
+  xy: 1258, 2
+  size: 192, 48
+  orig: 192, 48
+  offset: 0, 0
+  index: -1
+Punk_punch
+  rotate: false
+  xy: 1258, 52
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1
+Punk_run
+  rotate: false
+  xy: 968, 2
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1
+Punk_run_attack
+  rotate: false
+  xy: 678, 52
+  size: 288, 48
+  orig: 288, 48
+  offset: 0, 0
+  index: -1

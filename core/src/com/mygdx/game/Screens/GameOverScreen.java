@@ -37,6 +37,8 @@ public class GameOverScreen implements Screen {
 
         table.add(gameOverLabel).expandX();
         table.row();
+//        table.setBackground("/Users/anastasiatarazevich/Downloads/MarioGame/assets/tileset_gutter.png");
+
         table.add(playAgainLabel).expandX().padTop(10f);
 
         stage.addActor(table);
